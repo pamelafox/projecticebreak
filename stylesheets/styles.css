@@ -30,7 +30,7 @@ body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
-	background-color: #FBFAF7;
+	background-color: white;
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
@@ -321,6 +321,7 @@ section {
   width:650px;
   float:right;
   padding-bottom:50px;
+  padding-top: 10px;
 }
 
 
@@ -329,6 +330,7 @@ section {
 footer {
   width:170px;
   float:left;
+  clear: both;
   position:fixed;
   bottom:10px;
 	padding-left: 50px;
@@ -420,3 +422,4 @@ footer {
     color:#444;
   }
 }
+
