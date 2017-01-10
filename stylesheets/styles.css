@@ -144,11 +144,7 @@ hr {
 
 img {
   position: relative;
-  margin: 0 auto;
   max-width: 650px;
-  padding: 5px;
-  margin: 10px 0 32px 0;
-  border: 1px solid #ccc;
 }
 
 p img {
@@ -265,10 +261,14 @@ header ul {
 
 header li {
 	list-style-type: none;
+	line-height: 1em;
+}
+
+header li a.buttons {
+  display: inline-block;
   width:132px;
   height:15px;
 	margin-bottom: 12px;
-	line-height: 1em;
 	padding: 6px 6px 6px 7px;
 
 	background: #AF0011;
@@ -287,7 +287,7 @@ header li {
 
 }
 
-header li:hover {
+header li a.buttons:hover, header li a.buttons.current {
 	background: #C3001D;
 	background: -moz-linear-gradient(top, #C3001D 0%, #950119 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
@@ -303,10 +303,6 @@ a.buttons {
 	text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
 	padding: 2px 2px 2px 22px;
 	height: 30px;
-}
-
-a.github {
-	background: url(../images/octocat-small.png) no-repeat 1px;
 }
 
 a.buttons:hover {
@@ -334,6 +330,7 @@ footer {
   position:fixed;
   bottom:10px;
 	padding-left: 50px;
+  font-size: 11px;
 }
 
 @media print, screen and (max-width: 960px) {
